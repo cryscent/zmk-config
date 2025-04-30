@@ -88,7 +88,7 @@
 &trans          &kp F1            &kp F2           &kp F3            &kp F4           &kp F5  &kp F6            &kp F7           &kp F8             &kp F9           &kp F10         &kp F11
 &trans          &msc MOVE_Y(-20)  &msc MOVE_Y(-5)  &msc MOVE_Y(5)    &msc MOVE_Y(20)  &trans  &msc SCRL_UP      &msc SCRL_LEFT   &mmv MOVE_UP       &msc SCRL_RIGHT  &trans          &kp F12
 &trans          &msc MOVE_X(-20)  &msc MOVE_X(-5)  &msc MOVE_X(5)    &msc MOVE_X(20)  &trans  &msc SCRL_DOWN    &mmv MOVE_LEFT   &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &trans          &trans
-&kp LEFT_SHIFT  &trans            &trans           &trans            &trans           &trans  &kp LANG_HANGEUL  &mkp LCLK        &kp LANGUAGE_2     &mkp RCLK        &trans          &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &trans            &mkp RCLK        &trans            &mkp LCLK        &trans  &kp LANG_HANGEUL  &mkp LCLK        &kp LANGUAGE_2     &mkp RCLK        &trans          &kp RIGHT_SHIFT
 &trans          &kp LEFT_GUI      &kp LEFT_ALT     &kp LEFT_CONTROL  &trans           &trans  &trans            &trans           &kp RIGHT_CONTROL  &kp RIGHT_ALT    &kp RIGHT_GUI
                                                                                               &mkp RCLK         &mmv MOVE_RIGHT  &mmv MOVE_UP       &mmv MOVE_LEFT   &mmv MOVE_DOWN
             >;
@@ -108,12 +108,12 @@
 
             label = "adjust";
             bindings = <
-&bt BT_CLR                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans
-&trans                    &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans                    &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans                    &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&kp C_BRIGHTNESS_MINIMUM  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
-                                                                                                &trans  &kp B   &kp C   &kp D   &kp E
+&bt BT_CLR                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &trans         &trans    &trans        &trans     &trans  &trans
+&trans                    &trans        &trans        &trans            &trans        &trans        &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans  &trans
+&trans                    &trans        &trans        &trans            &trans        &trans        &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
+&kp LSHFT                 &trans        &trans        &trans            &trans        &trans        &trans         &trans    &trans        &trans     &trans  &trans
+&kp C_BRIGHTNESS_MINIMUM  &kp LCMD      &kp LEFT_ALT  &kp LEFT_CONTROL  &trans        &trans        &trans         &trans    &trans        &trans     &trans
+                                                                                                    &trans         &kp B     &kp C         &kp D      &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
